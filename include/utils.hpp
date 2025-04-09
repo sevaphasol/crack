@@ -24,7 +24,13 @@ static const int       FRAME_WIDTH    = 160;
 static const int       FRAME_HEIGHT   = 120;
 static const float     FPS            = 30.0f;
 
-static const float     PROGRESS_BAR_SIZE = 30;
+static const float     PROGRESS_BAR_X = 0;
+static const float     PROGRESS_BAR_Y = 0;
+static const float     PROGRESS_BAR_WIDTH = WINDOW_WIDTH;
+static const float     PROGRESS_BAR_HEIGHT = 30;
+static const sf::Color PROGRESS_BAR_BACKGROUND_COLOR = sf::Color(50, 50, 50);
+static const sf::Color PROGRESS_BAR_FILL_COLOR = sf::Color(255, 0, 255);
+static const float     PROGRESS_BAR_MAX_VALUE = 1.0f;
 
 static const char*     FONT_NAME     = "font.ttf";
 static const wchar_t*  TEXT_DATA     = L"ПРОИСХОДИТ ВЗЛОМ ЖОПЫ АРТЕМА";

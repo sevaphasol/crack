@@ -133,7 +133,7 @@ void main_ctor(main_t& main)
                          sf::Vector2f(0, 30),
                          sf::Vector2f(WINDOW_WIDTH/FRAME_WIDTH,
                                      (WINDOW_HEIGHT - TEXT_SIZE -
-                                      PROGRESS_BAR_SIZE)/FRAME_HEIGHT),
+                                      PROGRESS_BAR_HEIGHT)/FRAME_HEIGHT),
                          COLS,
                          ROWS,
                          FRAME_WIDTH,
@@ -141,11 +141,11 @@ void main_ctor(main_t& main)
                          FPS);
 
     progress_bar_ctor(main.progress_bar,
-                      sf::Vector2f(0, 0),
-                      sf::Vector2f(WINDOW_WIDTH, PROGRESS_BAR_SIZE),
-                      sf::Color(50, 50, 50),
-                      sf::Color(255, 0, 255),
-                      1.0f);
+                      sf::Vector2f(PROGRESS_BAR_X, PROGRESS_BAR_Y),
+                      sf::Vector2f(PROGRESS_BAR_WIDTH, PROGRESS_BAR_HEIGHT),
+                      PROGRESS_BAR_BACKGROUND_COLOR,
+                      PROGRESS_BAR_FILL_COLOR,
+                      PROGRESS_BAR_MAX_VALUE);
 
     confirmation_dialog_box_ctor(main.confirmation_dialog_box,
                                  CONFIRMATION_DIALOG_BOX_FONT_NAME,

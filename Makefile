@@ -11,7 +11,7 @@ SOURCES_DIR = src
 OBJECTS_DIR = bin
 BUILD_DIR   = build
 
-EXECUTABLE = draw
+EXECUTABLE = crack
 EXECUTABLE_PATH = $(BUILD_DIR)/$(EXECUTABLE)
 
 SOURCE_FILES = $(wildcard $(SOURCES_DIR)/*.cpp)
